@@ -1,13 +1,27 @@
 .app {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "header header header"
+    "search search search"
+    "contents contents contents"
+    "footer footer footer";
   .header {
-    background-color: lightyellow;
-    border: 3px solid #333;
-    width: 1024px;
-    max-width: 100%;
-    margin: 0 auto;
+    grid-area: header;
+    border-bottom: 2px solid #2f63e6;
+  }
+  .search {
+    grid-area: search;
   }
 
+  .contents {
+    grid-area: contents;
+    // grid-column: 1 / 4;
+  }
   .footer {
     background-color: lightcoral;
+    grid-area: footer;
+    text-align: center;
   }
 }

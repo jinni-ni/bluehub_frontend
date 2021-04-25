@@ -1,7 +1,8 @@
 import React from "react";
+import AnnList from "../components/AnnList";
 
 function Home() {
-  return <div>Home</div>;
+  return <AnnList />;
 }
 
 export default Home;

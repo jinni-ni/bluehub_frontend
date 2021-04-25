@@ -1,5 +1,6 @@
 import React from "react";
 import "./AppLayout.scss";
+import Navbar from "./Navbar";
 
 interface RootType {
   children?: React.ReactNode;
@@ -8,9 +9,16 @@ interface RootType {
 const AppLayout = ({ children }: RootType) => {
   return (
     <div className="app">
-      <div className="header">Header</div>
-      {children}
-      <div className="footer">Footer</div>
+      <div className="header">
+        <Navbar />
+      </div>
+      <div className="search">
+        <input type="text" />
+      </div>
+      <div className="contents">{children}</div>
+      <div className="footer">
+        <div>Footer</div>
+      </div>
     </div>
   );
 };
