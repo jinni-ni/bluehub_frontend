@@ -11,7 +11,7 @@ import smallLogoImage from "../assets/small_logo.png";
 
 export default function Navbar() {
   return (
-    <Popover className="relative bg-white">
+    <Popover className="relative">
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
@@ -36,13 +36,13 @@ export default function Navbar() {
                       >
                         <a
                           href="/"
-                          className="text-base font-medium text-gray-500 hover:text-blue-600"
+                          className="text-base text-2xl font-bold text-gray-500 hover:text-blue-500"
                         >
                           홈
                         </a>
                         <a
                           href="/"
-                          className="text-base font-medium text-gray-500 hover:text-blue-600"
+                          className="text-base text-2xl font-bold text-gray-500 hover:text-blue-400"
                         >
                           블로그
                         </a>
@@ -65,13 +65,13 @@ export default function Navbar() {
                 <div className="mx-20">
                   <a
                     href="/"
-                    className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-blue-600"
+                    className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-blue-300"
                   >
                     로그인
                   </a>
                   <a
                     href="/"
-                    className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-blue-600 hover:bg-blue-700"
+                    className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-blue-500 hover:bg-blue-700"
                   >
                     회원가입
                   </a>
@@ -148,10 +148,10 @@ export default function Navbar() {
                       href="/"
                       className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-blue-600 hover:bg-blue-700"
                     >
-                      회 원 가 입
+                      회원가입
                     </a>
                     <p className="mt-6 text-center text-base font-medium text-gray-500">
-                      로그인 하시겠습니까?{" "}
+                      로그인 하시겠습니까?&ensp;
                       <a href="#" className="text-blue-600 hover:text-blue-500">
                         로그인
                       </a>

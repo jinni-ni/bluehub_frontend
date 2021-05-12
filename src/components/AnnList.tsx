@@ -23,9 +23,8 @@ const AnnList = () => {
     console.log("mounted");
   }, []);
   return (
-    // md:grid md:grid-cols-2 gap-x-1 md:gap-y-5 justify-items-center
-    <div className=" col-start-1 col-end-4 md:m-10">
-      <div className="grid md:gap-4 md:grid-cols-2 gap-x-10">
+    <div className="col-start-1 col-end-4 md:m-10">
+      <div className="md:grid gap-4 md:grid-cols-2 gap-x-10">
         {annList.map((ann) => (
           <Ann announce={ann} key={ann.id} />
         ))}

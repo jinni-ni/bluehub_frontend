@@ -12,18 +12,18 @@ interface AnnouncementProps {
 function Ann({ announce }: AnnouncementProps) {
   const { title, company, region, closeDt } = announce;
   return (
-    <div className="flex border-2 justify-center items-center pl-3">
-      <div className="w-48 relative p-4">
+    <div className="flex justify-center items-center shadow-lg pl-3 mt-2 mx-2">
+      <div className="w-32 relative p-4">
         <img
           src="https://picsum.photos/seed/picsum/200"
           alt=""
-          className="w-45 rounded-md border-2 border-gray-300 "
+          className="w-45 rounded-md border-2 border-gray-300"
         />
       </div>
-      <div className="flex-auto p-6">
+      <div className="flex-auto p-2">
         <div className="flex flex-wrap-reverse ">
-          <div className="flex-auto space-x-3">
-            <h1 className="text-xl font-semibold">{title}</h1>
+          <div className="flex-auto">
+            <h1 className="text-xl font-semibold text-indigo-500">{title}</h1>
           </div>
           <div className="ml-auto">
             <button
@@ -42,18 +42,24 @@ function Ann({ announce }: AnnouncementProps) {
           </div>
         </div>
         <div>
-          <div className="w-full text-left text-sm font-medium text-gray-500 mt-2">
+          <div className="w-full text-left text-sm font-medium text-gray-500">
             <p>{company}</p>
           </div>
         </div>
 
         <div className="flex flex-wrap items-end text-sm mt-3 text-gray-500">
           <div className="flex flex-start mr-2 items-end">
-            <LocationMarkerIcon className="w-6 h-6" aria-hidden="true" />
+            <LocationMarkerIcon
+              className="w-6 h-6 text-indigo-500"
+              aria-hidden="true"
+            />
             <p className="pl-1">{region}</p>
           </div>
           <div className="flex flex-start items-end">
-            <CalendarIcon className="w-5 h-5 " aria-hidden="true" />
+            <CalendarIcon
+              className="w-5 h-5 text-indigo-500"
+              aria-hidden="true"
+            />
             <p className="pl-1">~ {closeDt}</p>
           </div>
         </div>
